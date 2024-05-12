@@ -1,0 +1,35 @@
+.card {
+  height: 25rem;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+  border: 0.2rem solid var(--titlesColor);
+  border-radius: 10%;
+  margin: 1rem auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.card__title {
+  font-family: var(--titlesFont);
+  font-size: 1.5rem;
+  color: var(--titlesColor);
+  margin-top: 1rem;
+  text-align: center;
+}
+.card__picture {
+  max-height: 8rem;
+  margin: 1rem auto;
+  border-radius: 5%;
+}
+.card__no-picture,
+.card__date-of-birth,
+.card__description,
+.card__wand,
+.card__patronus {
+  margin: 0.5rem;
+  font-family: var(--textFont);
+  font-size: 1.3rem;
+}

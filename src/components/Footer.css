@@ -1,0 +1,43 @@
+.links {
+  bottom: 0;
+  height: 8rem;
+  background-color: var(--titlesColor);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+}
+.links__title {
+  grid-column: 1/-1;
+  text-align: center;
+  align-self: center;
+  color: var(--secondaryColor);
+  font-family: var(--textFont);
+  font-size: 1.3rem;
+}
+.links__button {
+  background-color: var(--titlesColor);
+  border: none;
+}
+
+.links__logo {
+  height: 2.5rem;
+  background-color: var(--titlesColor);
+  border: none;
+}
+
+@media screen and (min-width: 576px) {
+  .links__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .links__title {
+    font-size: 2rem;
+  }
+  .links__logo {
+    height: 3rem;
+  }
+}

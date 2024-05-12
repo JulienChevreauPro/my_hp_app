@@ -1,9 +1,22 @@
-import "./SpellsPage.css"
+import { useLoaderData } from "react-router-dom";
 
-function SpellsPage () {
-    return (
-        <h2>Hello from spells</h2>
-    )
+import SpellCard from "../components/SpellCard";
+
+import "./SpellsPage.css";
+
+function SpellsPage() {
+  const spells = useLoaderData();
+
+  return (
+    <>
+      <h2 className="spellsPage__title">Discover the list of all spells and their effects</h2>
+      <article className="spellsPage__cards">
+      {spells.map((spell) => (
+      <SpellCard key={spell.id} spells={spell} />
+      ))}
+      </article>
+    </>
+  );
 }
 
 export default SpellsPage;

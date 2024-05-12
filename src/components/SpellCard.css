@@ -1,0 +1,29 @@
+.spell-card {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    border: 0.2rem solid var(--titlesColor);
+    border-radius: 10%;
+    margin: 2rem auto;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.spell-card__title {
+    font-family: var(--titlesFont);
+    font-size: 2rem;
+    color: var(--titlesColor);
+    margin: 1rem auto 0rem;
+}
+
+.spell-card__description {
+    max-height: 8rem;
+    font-family: var(--textFont);
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 1rem;
+}

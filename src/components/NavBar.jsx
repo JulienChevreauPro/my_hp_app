@@ -1,17 +1,31 @@
 import { Link } from "react-router-dom";
 
-import "./NavBar.css"
+import "./NavBar.css";
 
 function NavBar() {
-
-    return (
-        <nav>
-            <Link to= "/">Home</Link>
-            <Link to= "/characters">Characters</Link>
-            <Link to= "/houses">Houses</Link>
-            <Link to= "/spells">Spells</Link>
-        </nav>
-    )
+  return (
+    <header className="navbar">
+      <img
+        src="src/assets/images/Logo_HP.png"
+        alt="Logo Harry Potter"
+        className="navbar__logo"
+      />
+      <nav className="navbar__menu">
+        <Link to="/" className="navbar__item">
+          Home
+        </Link>
+        <Link to="/characters" className="navbar__item">
+          Characters
+        </Link>
+        <Link to="/houses" className="navbar__item">
+          Houses
+        </Link>
+        <Link to="/spells" className="navbar__item">
+          Spells
+        </Link>
+      </nav>
+    </header>
+  );
 }
 
 export default NavBar;
