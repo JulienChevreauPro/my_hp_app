@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "Harry P";
-    src:
-      local("HARRYP__"),
-      url("fonts/HARRYP__.TTF") format("truetype");
+  font-family: "Harry P";
+  src:
+    local("HARRYP__"),
+    url("fonts/HARRYP__.TTF") format("truetype");
 }
 
 @font-face {
@@ -13,22 +13,22 @@
 }
 
 :root {
-    --primaryColor: #181313;
-    --secondaryColor: #740001;
-    --tertiaryColor: #ae0001;
-    --titlesColor: #eeba30;
-    --textColor: #d6d0c1;
-    --titlesFont: "Harry P";
-    --textFont: "Dumbledor";
+  --primaryColor: #181313;
+  --secondaryColor: #740001;
+  --tertiaryColor: #ae0001;
+  --titlesColor: #eeba30;
+  --textColor: #d6d0c1;
+  --titlesFont: "Harry P";
+  --textFont: "Dumbledor";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: var(--primaryColor);
-    width: 100%;
+  background-color: var(--primaryColor);
+  width: 100%;
 }

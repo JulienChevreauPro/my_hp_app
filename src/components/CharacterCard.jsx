@@ -24,17 +24,23 @@ function CharacterCard({ characters }) {
         {name} ({house})
       </h4>
       {image !== "" ? (
-        <img src={image} alt={name} className="card__picture"/>
+        <img src={image} alt={name} className="card__picture" />
       ) : (
         <p className="card__no-picture">No available picture.</p>
       )}
       <p className="card__date-of-birth">
-        { dateOfBirth !== null ? `Born on ${dateOfBirth}.` : "Unknown date of birth."}
+        {dateOfBirth !== null
+          ? `Born on ${dateOfBirth}.`
+          : "Unknown date of birth."}
       </p>
       <p className="card__description">
-        {species!=="" && gender!=="" && ancestry!=="" && eyeColour!=="" && hairColour!==""?
-        `This ${species} ${ancestry} has ${eyeColour} eyes and ${hairColour} hair.` 
-        : "No description available."    }
+        {species !== "" &&
+        gender !== "" &&
+        ancestry !== "" &&
+        eyeColour !== "" &&
+        hairColour !== ""
+          ? `This ${species} ${ancestry} has ${eyeColour} eyes and ${hairColour} hair.`
+          : "No description available."}
       </p>
       <p className="card__wand">
         {wood === "" && core === "" && length === null

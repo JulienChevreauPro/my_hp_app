@@ -9,11 +9,13 @@ function SpellsPage() {
 
   return (
     <>
-      <h2 className="spellsPage__title">Discover the list of all spells and their effects</h2>
+      <h2 className="spellsPage__title">
+        Discover the list of all spells and their effects
+      </h2>
       <article className="spellsPage__cards">
-      {spells.map((spell) => (
-      <SpellCard key={spell.id} spells={spell} />
-      ))}
+        {spells.map((spell) => (
+          <SpellCard key={spell.id} spells={spell} />
+        ))}
       </article>
     </>
   );

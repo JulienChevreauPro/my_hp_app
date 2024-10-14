@@ -1,27 +1,27 @@
 .charactersPage__title {
-    margin-top: 9rem;
-    font-size: 2rem;
-    font-family: var(--titlesFont);
-    color: var(--titlesColor);
-    text-align: center;
+  margin-top: 9rem;
+  font-size: 2rem;
+  font-family: var(--titlesFont);
+  color: var(--titlesColor);
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    .charactersPage {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .charactersPage__title {
-        grid-column: 1/-1;
-        font-size: 2.5rem;
-    }
+  .charactersPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .charactersPage__title {
+    grid-column: 1/-1;
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .charactersPage {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .charactersPage__title {
-        font-size: 3rem;
-    }
+  .charactersPage {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .charactersPage__title {
+    font-size: 3rem;
+  }
 }

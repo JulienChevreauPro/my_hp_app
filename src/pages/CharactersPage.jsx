@@ -9,9 +9,11 @@ function CharactersPage() {
 
   return (
     <main className="charactersPage">
-      <h2 className="charactersPage__title">Discover all the characters of the saga</h2>
+      <h2 className="charactersPage__title">
+        Discover all the characters of the saga
+      </h2>
       {characterList.map((character) => (
-      <CharacterCard key={character.id} characters={character} />
+        <CharacterCard key={character.id} characters={character} />
       ))}
     </main>
   );

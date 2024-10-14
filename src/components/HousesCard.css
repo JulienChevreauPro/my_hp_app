@@ -1,0 +1,39 @@
+.houses {
+  .houses__Hufflepuff,
+  .houses__Ravenclaw,
+  .houses__Slytherin,
+  .houses__Gryffindor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14rem;
+    height: auto;
+    margin: 2rem auto;
+    border: 0.3rem solid var(--titlesColor);
+    background-color: var(--secondaryColor);
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
+  .houses__Hufflepuff-logo,
+  .houses__Ravenclaw-logo,
+  .houses__Slytherin-logo,
+  .houses__Gryffindor-logo {
+    width: 12rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 1rem;
+    border: 0.2rem solid;
+  }
+  .houses__Hufflepuff-button,
+  .houses__Ravenclaw-button,
+  .houses__Slytherin-button,
+  .houses__Gryffindor-button {
+    width: 12rem;
+    height: 2.5rem;
+    border: 0.2rem solid;
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--titlesColor);
+    color: var(--primaryColor);
+    font-family: var(--titlesFont);
+    font-size: 2rem;
+  }
+}
