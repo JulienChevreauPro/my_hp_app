@@ -1,5 +1,5 @@
 .links {
-  bottom: 0;
+  margin-bottom: 0;
   height: 8rem;
   background-color: var(--titlesColor);
   display: grid;

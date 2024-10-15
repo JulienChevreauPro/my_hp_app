@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 20rem;
     width: 14rem;
-    height: auto;
     margin: 2rem auto;
     border: 0.3rem solid var(--titlesColor);
     background-color: var(--secondaryColor);
