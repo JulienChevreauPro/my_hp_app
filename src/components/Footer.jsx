@@ -13,14 +13,14 @@ function Footer() {
         className="links__button"
       >
         <img
-          src="src/assets/images/icon_github.png"
+          src="/images/icon_github.png"
           alt="GitHub logo"
           className="links__logo"
         />
       </a>
       <a href="https://twitter.com" target="_blank" className="links__button">
         <img
-          src="src/assets/images/icon_twitterx.png"
+          src="/images/icon_twitterx.png"
           alt="TwitterX logo"
           className="links__logo"
         />
@@ -31,14 +31,14 @@ function Footer() {
         className="links__button"
       >
         <img
-          src="src/assets/images/icon_facebook.png"
+          src="/images/icon_facebook.png"
           alt="Facebook logo"
           className="links__logo"
         />
       </a>
       <Link to="/contact" className="links__button">
         <img
-          src="src/assets/images/icon_contact.png"
+          src="/images/icon_contact.png"
           alt="Contact us"
           className="links__logo"
         />

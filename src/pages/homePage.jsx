@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./HomePage.css";
 
 function HomePage() {
@@ -5,7 +7,7 @@ function HomePage() {
     <>
       <h1 className="home__title">Harry Potter</h1>
       <img
-        src="src/assets/images/Flying_HP.jpg"
+        src="/images/Flying_HP.jpg"
         alt="Harry Potter volant de nuit sur son balai magique"
         className="home__picture-harry"
       />
@@ -15,21 +17,25 @@ function HomePage() {
         adventure await you. Immerse yourself in the magical universe of
         characters, houses, and spells that have captivated fans worldwide.
       </p>
-      <img
-        src="src/assets/images/HP_Hermione_Ron.jpg"
-        alt="Harry, Hermione et Ron"
-        className="home__picture-trio"
-      />
+      <Link to="/characters">
+        <img
+          src="/images/HP_Hermione_Ron.jpg"
+          alt="Harry, Hermione et Ron"
+          className="home__picture-trio"
+        />
+      </Link>
       <p className="home__intro">
         Discover the vibrant characters that populate the wizarding world, from
         the courageous trio of Harry, Ron, and Hermione to dark and enigmatic
         figures like Severus Snape and Bellatrix Lestrange.
       </p>
-      <img
-        src="src/assets/images/Houses.jpg"
-        alt="Blasons des maisons de Poudlard"
-        className="home__picture-houses"
-      />
+      <Link to="/houses">
+        <img
+          src="/images/Houses.jpg"
+          alt="Blasons des maisons de Poudlard"
+          className="home__picture-houses"
+        />
+      </Link>
       <p className="home__intro">
         Explore the prestigious houses of Hogwarts - Gryffindor, Slytherin,
         Ravenclaw, and Hufflepuff - each with its own unique traits and values.
@@ -40,11 +46,13 @@ function HomePage() {
         &#39;Expelliarmus&#39; to powerful and forbidden curses like &#39;Avada
         Kedavra&#39;.
       </p>
-      <img
-        src="src/assets/images/VdmSort.jpg"
-        alt="Voldemort lance un sort"
-        className="home__picture-sort"
-      />
+      <Link to="/spells">
+        <img
+          src="/images/VdmSort.jpg"
+          alt="Voldemort lance un sort"
+          className="home__picture-sort"
+        />
+      </Link>
       <p className="home__intro">
         Whether you&#39;re a seasoned Hogwarts alumnus or a curious Muggle eager
         to explore the wonders of the wizarding world, &#39;Wonders of the

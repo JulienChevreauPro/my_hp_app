@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import CharacterCard from "../components/CharacterCard";
 import ScrollToTop from "../components/ScrollToTop";
-// import "./HouseNamePage.css";
+import "./HouseNamePage.css";
 
 function HouseNamePage() {
   const { houseName } = useParams();
+  const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,11 +28,15 @@ function HouseNamePage() {
     <section className="houses--clicked">
       <article className={`houses__${houseName}--clicked`}>
         <img
-          src={`src/assets/images/${houseName}Logo.jpg`}
+          src={`/images/${houseName}Logo.jpg`}
           alt={`${houseName} Logo`}
           className={`houses__${houseName}-logo`}
         />
-        <button type="button" className={`houses__${houseName}-button`}>
+        <button
+          type="button"
+          className={`houses__${houseName}-button`}
+          onClick={() => navigate(-1)}
+        >
           Return
         </button>
       </article>

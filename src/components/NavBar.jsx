@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <header className="navbar">
       <img
-        src="src/assets/images/Logo_HP.png"
+        src="/images/Logo_HP.png"
         alt="Logo Harry Potter"
         className="navbar__logo"
       />

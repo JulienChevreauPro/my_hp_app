@@ -7,7 +7,7 @@ function HousesCard({ houseName }) {
   return (
     <article className={`houses__${houseName}`}>
       <img
-        src={`src/assets/images/${houseName}Logo.jpg`}
+        src={`/images/${houseName}Logo.jpg`}
         alt={`${houseName} logo`}
         title={`See all ${houseName}'s students`}
         className="houses__Hufflepuff-logo"
